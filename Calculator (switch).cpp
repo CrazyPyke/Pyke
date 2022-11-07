@@ -12,39 +12,36 @@ using namespace std;
 
 int main()
 {
-    int day;
+    float number1, number2;
+    cout<< "Enter First Number: ";
+    cin>>number1;
     
-    cout << "Enter Weekday: ";
-    cin >> day;
+    char method;
+    cout<< "Enter your method: ";
+    cin>>method;
     
-    switch (day) {
-        case 1:
-        cout << "orshabati";
+    cout<< "Enter Secund Number: ";
+    cin>>number2; 
+    
+    
+    
+    switch (method){
+        case '+':
+        cout << number1 + number1;
         break;
-        case 2:
-        cout << "samshabati";
+        case '-':
+        cout<< number1 - number2;
         break;
-        case 3:
-        cout << "otxshabati";
+        case '/':
+        cout<<  number1 / number2;
         break;
-        case 4:
-        cout << "khutshabati";
+        case '*':
+        cout<< number1 * number2;
         break;
-        case 5:
-        cout << "paraskevi";
-        break;
-        case 6: 
-        cout << "shabati";
-        break;
-        case 7:
-        cout << "kvira";
-        break;
-        
-        //default  tu arcerti zemot agnisnuli shemtxveva ar aris agwerili sheasrulebs defoultshi agnishnul moqmedebas.
         default:
-        cout << " araa kvioris dge";
+        cout<< "თქვენ არასწორედ შეიყვანეთ სიმბოლო, გთხოვთ გაგამოიყენოთ  : + - = /  "   ;
         
     }
-
     return 0;
 }
+
